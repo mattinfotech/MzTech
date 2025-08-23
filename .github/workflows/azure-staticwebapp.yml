@@ -13,38 +13,50 @@
 
 name: Deploy Blazor WASM to Azure Static Web Apps
 
+# Trigger deployment on push to main branch
 on:
   push:
     branches:
-      - main
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - name: Setup .NET
+    steps:
+      # Step 1: Checkout your repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Setup .NET SDK
+      - name: Setup .NET 8 SDK
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore
+      # Step 3: Restore NuGet dependencies
+      - name: Restore dependencies
         run: dotnet restore ./MzTech.csproj
 
+      # Step 4: Build the project
       - name: Build
         run: dotnet build ./MzTech.csproj -c Release
 
+      # Step 5: Publish the project to output folder
       - name: Publish
         run: dotnet publish ./MzTech.csproj -c Release -o ./output
 
+      # Step 6: Deploy to Azure Static Web Apps
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: ""                 # repo root (ignored because skip_app_build=true)
-          api_location: ""                 # no API
-          skip_app_build: true             # important
-          app_artifact_location: "output/wwwroot"  # ⚡ Must point to published wwwroot
+          action: "upload"                       # Skip Oryx build
+          app_location: ""                       # Repo root (ignored because skip_app_build=true)
+          api_location: ""                       # No Azure Functions API
+          skip_app_build: true                   # Important: we already pre-built
+          app_artifact_location: "output/wwwroot" # ⚡ Path where index.html exists
