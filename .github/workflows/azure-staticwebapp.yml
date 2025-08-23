@@ -55,8 +55,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"                       # Skip Oryx build
-          app_location: ""                       # Repo root (ignored because skip_app_build=true)
-          api_location: ""                       # No Azure Functions API
-          skip_app_build: true                   # Important: we already pre-built
-          app_artifact_location: "output/wwwroot" # ⚡ Path where index.html exists
+          action: "upload"
+          app_location: "output/wwwroot"    # <-- where index.html exists after publish
+          api_location: ""                  # no API
+          app_artifact_location: ""         # leave empty when app_location already points to built files
