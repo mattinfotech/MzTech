@@ -33,7 +33,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore MzTech/MzTech.csproj
+        run: dotnet restore MzTech.csproj
 
       - name: Build
         run: dotnet build MzTech.csproj -c Release
