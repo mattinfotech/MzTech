@@ -36,10 +36,10 @@ jobs:
         run: dotnet restore MzTech/MzTech.csproj
 
       - name: Build
-        run: dotnet build MzTech/MzTech.csproj -c Release
+        run: dotnet build MzTech.csproj -c Release
 
       - name: Publish
-        run: dotnet publish MzTech/MzTech.csproj -c Release -o ./output
+        run: dotnet publish MzTech.csproj -c Release -o ./output
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
