@@ -34,10 +34,10 @@ jobs:
           dotnet-version: '8.0.x' # adjust if your project is .NET 6/7
 
       - name: Restore
-        run: dotnet restore ./MzTech/MzTech.csproj
+        run: dotnet restore /MzTech.csproj
 
       - name: Publish
-        run: dotnet publish ./MzTech/MzTech.csproj -c Release -o ./output
+        run: dotnet publish /MzTech.csproj -c Release -o ./output
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
