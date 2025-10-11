@@ -1,15 +1,17 @@
 ﻿@using MzTech.Pages
 @inherits LayoutComponentBase
 
-<NavMenu BrandName="MZ Tech" />
+<div class="d-flex flex-column min-vh-100">
+    <NavMenu BrandName="MZ Tech" />
 
-<div class="main-content pt-5">
-    @Body
-</div>
-
-<footer class="bg-dark text-white py-4 mt-auto">
-    <div class="container text-center">
-        <p class="mb-1">&copy; @DateTime.Now.Year Matt. All Rights Reserved.</p>
-        <small class="text-white">Built with Blazor WebAssembly & Bootstrap 5</small>
+    <div class="flex-grow-1 main-content pt-5">
+        @Body
     </div>
-</footer>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">&copy; @DateTime.Now.Year Matt. All Rights Reserved.</p>
+            <small class="text-white">Built with Blazor WebAssembly & Bootstrap 5</small>
+        </div>
+    </footer>
+</div>

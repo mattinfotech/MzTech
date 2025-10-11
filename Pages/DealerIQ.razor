@@ -3,6 +3,7 @@
 
 <ProjectDetails 
     Title="@Title"
+    Subtitle="@SubTitle"
     MainImage="@MainImage"
     AboutDescription="@AboutDescription"
     AdditionalDescription="@AdditionalDescription"
@@ -13,6 +14,7 @@
 
 @code {
     private string Title = "DealerIQ";
+    private string SubTitle = "DealeIQ is a software solution for car dealerships that streamlines sales, service operations, and customer call management.";
 
     private string MainImage = "https://inductability.blob.core.windows.net/profile/SalesIQ-1.png?sp=r&st=2025-09-07T06:13:32Z&se=2026-09-07T14:28:32Z&spr=https&sv=2024-11-04&sr=b&sig=QidpJRQ61Vl%2BWqKJMkXigOiU%2B%2FJpYZKlu0TuTDZN4zc%3D";
 
@@ -20,17 +22,18 @@
 
     private string AdditionalDescription = "It helps dealerships enhance operational efficiency by automating workflows, managing service appointments, tracking sales performance, and improving customer engagement with intelligent call handling and analytics.";
 
-    private string TechStack = "Developed with <strong>ASP.NET Core</strong> and <strong>Blazor WebAssembly</strong>, powered by <strong>Entity Framework Core</strong> and <strong>Azure Cloud Services</strong> for scalability and reliability.";
+    private string TechStack = "Developed with <strong>ASP.NET Core</strong> using the <strong>DevExpress XAF Blazor Server</strong> framework, powered by <strong>Xpress Persistent Objects (XPO)</strong> and <strong>Azure Cloud Services</strong> for deployment.";
 
     private string ContactUrl = "/contact";
 
     private List<string> Features = new()
     {
-        "Sales and service process automation",
-        "Customer call tracking and interaction analytics",
-        "Appointment and workflow management",
-        "Integrated CRM features for improved client relationships",
-        "Real-time dashboards and reporting"
+        "Generate monthly quotations",
+        "Track customer calls and analyze interactions",
+        "Automate daily service appointment notifications",
+        "Import sales leads and service data",
+        "Support for multitenancy",
+        "Real-time reporting and insights"
     };
 
     private List<string> AdditionalImages = new()
