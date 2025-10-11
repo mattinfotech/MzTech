@@ -1,0 +1,42 @@
+﻿@page "/visionunlocked"
+@using MzTech.Components
+
+<ProjectDetails 
+    Title="@Title"
+    MainImage="@MainImage"
+    AboutDescription="@AboutDescription"
+    AdditionalDescription="@AdditionalDescription"
+    TechStack="@TechStack"
+    ContactUrl="@ContactUrl"
+    Features="@Features"
+    AdditionalImages="@AdditionalImages" />
+
+@code {
+    private string Title = "VisionUnlocked";
+
+    private string MainImage = "https://inductability.blob.core.windows.net/profile/visionunlocked.png?sp=r&st=2025-09-07T13:59:58Z&se=2026-09-07T22:14:58Z&spr=https&sv=2024-11-04&sr=b&sig=uKELzilHsPnpkTL83EiH0rUslVRnaLSK3aW5E6Gl1pY%3D";
+
+    private string AboutDescription = "VisionUnlocked is a cloud-based platform designed for optometrists to efficiently manage patient appointments, health records, and pre-screening questionnaires — all in one place.";
+
+    private string AdditionalDescription = "By integrating with Optomate Touch EHR software, VisionUnlocked enables seamless synchronization of patient data and enhances clinic productivity. The system supports secure API connectivity, giving practices real-time insights into their patient engagement and operations.";
+
+    private string TechStack = "Built with <strong>ASP.NET Core</strong> and <strong>Blazor WebAssembly</strong>, using <strong>Azure App Services</strong> and <strong>Blob Storage</strong> for cloud hosting and document management. The frontend employs <strong>Bootstrap 5</strong> for responsive and accessible design.";
+
+    private string ContactUrl = "/contact";
+
+    private List<string> Features = new()
+    {
+        "Seamless integration with Optomate Touch EHR",
+        "Digital patient forms and questionnaire management",
+        "Secure cloud data storage and access control",
+        "Automated synchronization of appointment records",
+        "Responsive, mobile-friendly design"
+    };
+
+    private List<string> AdditionalImages = new()
+    {
+        "https://via.placeholder.com/400x250?text=Patient+Dashboard",
+        "https://via.placeholder.com/400x250?text=Appointment+Scheduler",
+        "https://via.placeholder.com/400x250?text=Reports+and+Analytics"
+    };
+}

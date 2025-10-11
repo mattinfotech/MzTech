@@ -1,0 +1,42 @@
+﻿@page "/rmx"
+@using MzTech.Components
+
+<ProjectDetails 
+    Title="@Title"
+    MainImage="@MainImage"
+    AboutDescription="@AboutDescription"
+    AdditionalDescription="@AdditionalDescription"
+    TechStack="@TechStack"
+    ContactUrl="@ContactUrl"
+    Features="@Features"
+    AdditionalImages="@AdditionalImages" />
+
+@code {
+    private string Title = "Rental Manager Xpress (RMX)";
+
+    private string MainImage = "https://inductability.blob.core.windows.net/profile/Scheduler.jpg?sp=r&st=2025-09-07T06:16:38Z&se=2026-09-07T14:31:38Z&spr=https&sv=2024-11-04&sr=b&sig=uEhAaTQdzFSScK1zAbuXm%2BanMnfLbRu4fBr8gm1fjno%3D";
+
+    private string AboutDescription = "Rental Manager Xpress (RMX) is a specialized rental management platform designed for RV and equipment rental businesses. It centralizes reservations, payment tracking, and maintenance schedules to simplify rental operations.";
+
+    private string AdditionalDescription = "The system empowers rental companies with automation tools to manage bookings, track vehicle availability, and generate real-time financial and utilization reports — all through a user-friendly web interface.";
+
+    private string TechStack = "Developed using <strong>ASP.NET Core</strong> and <strong>Blazor WebAssembly</strong>, integrated with <strong>Entity Framework Core</strong> and hosted on <strong>Microsoft Azure</strong>.";
+
+    private string ContactUrl = "/contact";
+
+    private List<string> Features = new()
+    {
+        "Centralized management for RV and equipment rentals",
+        "Real-time booking and availability tracking",
+        "Automated invoicing and payment integration",
+        "Maintenance scheduling and reporting tools",
+        "Responsive design for mobile and desktop use"
+    };
+
+    private List<string> AdditionalImages = new()
+    {
+        "https://via.placeholder.com/400x250?text=Rental+Dashboard",
+        "https://via.placeholder.com/400x250?text=Booking+Calendar",
+        "https://via.placeholder.com/400x250?text=Reports+View"
+    };
+}

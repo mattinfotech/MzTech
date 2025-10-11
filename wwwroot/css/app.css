@@ -1,3 +1,62 @@
+html, body {
+    height: 100%;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    min-height: calc(100vh - 150px);
+    background-color: #f8f9fa; /* optional light background */
+}
+
+footer {
+    flex-shrink: 0;
+}
+body {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    position: relative;
+    color: #fff;
+    min-height: 100vh;
+    padding: 100px 0;
+    overflow: hidden; /* ensures blur doesn't overflow */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80") no-repeat center/cover;
+    filter: blur(8px); /* adjust blur intensity */
+    transform: scale(1.1); /* prevent edges from showing */
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1; /* keeps text and buttons above blurred bg */
+}
+
+.logo-img {
+    max-height: 50px; /* controls logo size */
+    width: auto; /* keeps aspect ratio */
+    object-fit: contain;
+}
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .hover-effect:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }
@@ -74,4 +133,16 @@
 
 code {
     color: #c02d76;
+}
+
+section {
+    scroll-margin-top: 80px; /* keeps scroll position nice under fixed navbar */
+}
+
+    section.bg-primary {
+        background: linear-gradient(90deg, #0d6efd 0%, #0b5ed7 100%);
+    }
+
+img.rounded-4 {
+    border-radius: 1rem !important;
 }

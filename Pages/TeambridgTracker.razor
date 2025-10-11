@@ -1,0 +1,43 @@
+﻿@page "/teambridg-tracker"
+@using MzTech.Components
+
+<ProjectDetails 
+    Title="@Title"
+    Subtitle="Team Bridg Tracker is a project management tool that streamlines collaboration, monitors progress,
+            and boosts productivity through effective communication and task tracking."
+    MainImage="@MainImage"
+    AboutDescription="@AboutDescription"
+    AdditionalDescription="@AdditionalDescription"
+    TechStack="@TechStack"
+    ContactUrl="@ContactUrl"
+    Features="@Features"
+    AdditionalImages="@AdditionalImages" />
+
+@code {
+    private string Title = "Team Bridg Tracker";
+    private string MainImage = "https://inductability.blob.core.windows.net/profile/Teambridg%2B1%20(1).png?sp=r&st=2025-08-24T14:13:28Z&se=2026-08-24T22:28:28Z&spr=https&sv=2024-11-04&sr=b&sig=5ea8u7TCjjGxhLP0LdVtpT95YU0QaCrIk2jMfYOA3RM%3D";
+    
+    private string AboutDescription = "Team Bridg Tracker is a collaborative project management platform designed to improve productivity and transparency across teams by providing a centralized space for managing tasks and milestones.";
+
+    private string AdditionalDescription = "The system helps teams coordinate effectively, visualize workloads, and identify potential bottlenecks before they impact delivery. With live progress updates, it ensures accountability and seamless project execution.";
+
+    private string TechStack = "Developed with <strong>Blazor WebAssembly</strong>, <strong>ASP.NET Core API</strong>, and <strong>SQL Server</strong>. Real-time functionality is powered by <strong>SignalR</strong>.";
+
+    private string ContactUrl = "/contact";
+
+    private List<string> Features = new()
+    {
+        "Task creation, assignment, and progress tracking",
+        "Real-time updates and notifications using SignalR",
+        "Integrated chat and file sharing",
+        "Project dashboards and performance analytics",
+        "Secure role-based access control"
+    };
+
+    private List<string> AdditionalImages = new()
+    {
+        "https://via.placeholder.com/400x250?text=Dashboard+Overview",
+        "https://via.placeholder.com/400x250?text=Team+Activity",
+        "https://via.placeholder.com/400x250?text=Analytics+Report"
+    };
+}

@@ -1,0 +1,42 @@
+﻿@page "/prodtrac"
+@using MzTech.Components
+
+<ProjectDetails 
+    Title="@Title"
+    MainImage="@MainImage"
+    AboutDescription="@AboutDescription"
+    AdditionalDescription="@AdditionalDescription"
+    TechStack="@TechStack"
+    ContactUrl="@ContactUrl"
+    Features="@Features"
+    AdditionalImages="@AdditionalImages" />
+
+@code {
+    private string Title = "ProdTrac";
+
+    private string MainImage = "https://inductability.blob.core.windows.net/profile/actual.png?sp=r&st=2025-09-07T13:16:33Z&se=2026-09-07T21:31:33Z&spr=https&sv=2024-11-04&sr=b&sig=lCDiH99m8AC1XApwuADstTpkfNy%2Fhd6G2mgxjNuF5vc%3D";
+
+    private string AboutDescription = "ProdTrac is a powerful production tracking software designed for construction and manufacturing teams to monitor project progress, manage completion timelines, and ensure production milestones are met efficiently.";
+
+    private string AdditionalDescription = "It centralizes production workflows, providing visibility into each phase of a build project. With real-time tracking and reporting, ProdTrac helps project managers identify bottlenecks and make informed decisions to keep operations running smoothly.";
+
+    private string TechStack = "Built using <strong>ASP.NET Core</strong> with <strong>Blazor WebAssembly</strong>, leveraging <strong>Entity Framework Core</strong> and <strong>SQL Server</strong> for data persistence. The frontend uses <strong>Bootstrap 5</strong> for a responsive and modern interface.";
+
+    private string ContactUrl = "/contact";
+
+    private List<string> Features = new()
+    {
+        "Real-time production tracking and reporting",
+        "Customizable dashboards and KPIs",
+        "Automated alerts for project milestones",
+        "Data visualization for progress analysis",
+        "Centralized communication between departments"
+    };
+
+    private List<string> AdditionalImages = new()
+    {
+        "https://via.placeholder.com/400x250?text=Production+Dashboard",
+        "https://via.placeholder.com/400x250?text=Project+Timeline",
+        "https://via.placeholder.com/400x250?text=Reports+and+Analytics"
+    };
+}

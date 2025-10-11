@@ -1,0 +1,42 @@
+﻿@page "/dealeriq"
+@using MzTech.Components
+
+<ProjectDetails 
+    Title="@Title"
+    MainImage="@MainImage"
+    AboutDescription="@AboutDescription"
+    AdditionalDescription="@AdditionalDescription"
+    TechStack="@TechStack"
+    ContactUrl="@ContactUrl"
+    Features="@Features"
+    AdditionalImages="@AdditionalImages" />
+
+@code {
+    private string Title = "DealerIQ";
+
+    private string MainImage = "https://inductability.blob.core.windows.net/profile/SalesIQ-1.png?sp=r&st=2025-09-07T06:13:32Z&se=2026-09-07T14:28:32Z&spr=https&sv=2024-11-04&sr=b&sig=QidpJRQ61Vl%2BWqKJMkXigOiU%2B%2FJpYZKlu0TuTDZN4zc%3D";
+
+    private string AboutDescription = "DealerIQ is a comprehensive automotive dealership management solution that integrates sales, service, and customer communication in one streamlined platform.";
+
+    private string AdditionalDescription = "It helps dealerships enhance operational efficiency by automating workflows, managing service appointments, tracking sales performance, and improving customer engagement with intelligent call handling and analytics.";
+
+    private string TechStack = "Developed with <strong>ASP.NET Core</strong> and <strong>Blazor WebAssembly</strong>, powered by <strong>Entity Framework Core</strong> and <strong>Azure Cloud Services</strong> for scalability and reliability.";
+
+    private string ContactUrl = "/contact";
+
+    private List<string> Features = new()
+    {
+        "Sales and service process automation",
+        "Customer call tracking and interaction analytics",
+        "Appointment and workflow management",
+        "Integrated CRM features for improved client relationships",
+        "Real-time dashboards and reporting"
+    };
+
+    private List<string> AdditionalImages = new()
+    {
+        "https://via.placeholder.com/400x250?text=Sales+Dashboard",
+        "https://via.placeholder.com/400x250?text=Customer+Analytics",
+        "https://via.placeholder.com/400x250?text=Call+Tracking+Interface"
+    };
+}

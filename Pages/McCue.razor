@@ -1,0 +1,42 @@
+﻿@page "/mccue"
+@using MzTech.Components
+
+<ProjectDetails 
+    Title="@Title"
+    MainImage="@MainImage"
+    AboutDescription="@AboutDescription"
+    AdditionalDescription="@AdditionalDescription"
+    TechStack="@TechStack"
+    ContactUrl="@ContactUrl"
+    Features="@Features"
+    AdditionalImages="@AdditionalImages" />
+
+@code {
+    private string Title = "McCue";
+
+    private string MainImage = "https://inductability.blob.core.windows.net/profile/mccue.png?sp=r&st=2025-09-07T13:15:17Z&se=2026-09-07T21:30:17Z&spr=https&sv=2024-11-04&sr=b&sig=La8R4mPazHaXh9w9FDMIQ3TkJtcGWMRNG8%2FNXcJG4hk%3D";
+
+    private string AboutDescription = "McCue is an industrial-grade software solution built to manage inventory, process sales and service orders, and generate actionable reports for industrial safety equipment operations.";
+
+    private string AdditionalDescription = "It empowers warehouse teams and service departments with real-time data on stock levels, order fulfillment, and product tracking. McCue streamlines the entire workflow from customer order to delivery and after-sales service reporting.";
+
+    private string TechStack = "Developed using <strong>ASP.NET Core</strong> with <strong>Blazor Server</strong>, leveraging <strong>Entity Framework Core</strong> for data persistence and <strong>SQL Server</strong> as the backend database.";
+
+    private string ContactUrl = "/contact";
+
+    private List<string> Features = new()
+    {
+        "Inventory tracking and low-stock alerts",
+        "Sales and service order management",
+        "Comprehensive reporting and analytics dashboard",
+        "Role-based access control for staff and admins",
+        "Seamless integration with third-party services"
+    };
+
+    private List<string> AdditionalImages = new()
+    {
+        "https://via.placeholder.com/400x250?text=Inventory+Dashboard",
+        "https://via.placeholder.com/400x250?text=Sales+Orders",
+        "https://via.placeholder.com/400x250?text=Service+Reports"
+    };
+}
