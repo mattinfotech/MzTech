@@ -51,6 +51,11 @@ body {
     object-fit: contain;
 }
 
+.hero-gradient {
+    background: linear-gradient(135deg, #0b5ed7 0%, #002d80 100%);
+}
+
+
 .hover-effect {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
