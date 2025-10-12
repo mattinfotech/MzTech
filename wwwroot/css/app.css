@@ -155,3 +155,31 @@ section {
 img.rounded-4 {
     border-radius: 1rem !important;
 }
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    color: #0d6efd;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+    .social-link:hover {
+        background-color: #0d6efd;
+        color: white;
+        transform: translateY(-3px);
+    }
