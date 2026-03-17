@@ -1,0 +1,36 @@
+﻿@page "/krx-and-fwd"
+@using MzTech.Components
+
+<ProjectDetails 
+    Title="@Title"
+    Subtitle="@SubTitle"
+    MainImage="@MainImage"
+    AboutDescription="@AboutDescription"
+    AdditionalDescription="@AdditionalDescription"
+    TechStack="@TechStack"
+    ContactUrl="@ContactUrl"
+    Features="@Features"
+    AdditionalImages="@AdditionalImages" />
+
+@code {
+    private string Title = "KRX and FWD";
+    private string SubTitle = "An Excel COM add-in for forecasting net cash flow.";
+    private string MainImage = "images/forecast.png";
+    private string AboutDescription = "KRX and FWD is a powerful Excel COM add-in designed to help businesses forecast net cash flow accurately and efficiently.";
+    private string AdditionalDescription = "It provides advanced financial modeling tools, integrates seamlessly with Excel, and offers intuitive features for analyzing cash flow trends and making informed financial decisions.";
+    private string TechStack = "Developed with <strong>Excel COM Add-in</strong> technology, leveraging <strong>C#</strong> and <strong>.NET</strong> for enhanced functionality and integration.";
+    private string ContactUrl = "/contact";
+    private List<string> Features = new()
+    {
+        "Advanced cash flow forecasting models",
+        "Seamless integration with Excel for data analysis",
+        "Metrics and visualizations for cash flow trends",
+        "User-friendly interface for efficient data input and analysis",
+        "Customizable forecasting parameters and scenarios"
+    };
+
+    private List<string> AdditionalImages = new()
+    {
+        "images/cashbrief.png"
+    };
+}
