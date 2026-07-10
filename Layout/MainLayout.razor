@@ -1,17 +1,39 @@
-﻿@using MzTech.Pages
+@using MzTech.Pages
 @inherits LayoutComponentBase
 
-<div class="d-flex flex-column min-vh-100">
+<div class="d-flex flex-column min-vh-100 site-shell">
     <NavMenu BrandName="MZ Tech" />
 
     <div class="flex-grow-1 main-content pt-5">
         @Body
     </div>
 
-    <footer class="bg-dark text-white py-4 mt-auto">
-        <div class="container text-center">
-            <p class="mb-1">&copy; @DateTime.Now.Year Matt. All Rights Reserved.</p>
-            <small class="text-white">Built with Blazor WebAssembly & Bootstrap 5</small>
+    <footer class="site-footer mt-auto">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-1">&copy; @DateTime.Now.Year Matt. All Rights Reserved.</p>
+                    <small>Built with Blazor WebAssembly & Bootstrap 5</small>
+                </div>
+
+                <div class="col-md-6 d-flex flex-column align-items-center align-items-md-end gap-3">
+                    <a class="footer-phone" href="tel:+639123456789" aria-label="Call +63 912 345 6789">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>+63 912 345 6789</span>
+                    </a>
+                    <div class="footer-socials" aria-label="Social media links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matiaslagat/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/mattinfotech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </div>
