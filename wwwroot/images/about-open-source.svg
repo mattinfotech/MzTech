@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Open source software workspace illustration</title>
+  <desc id="desc">A modern workstation with code panels, cloud nodes, and collaboration lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8fbf7" />
+      <stop offset="0.52" stop-color="#f8fbff" />
+      <stop offset="1" stop-color="#fff4dc" />
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10202f" />
+      <stop offset="1" stop-color="#134e4a" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#10202f" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="42" fill="url(#bg)" />
+  <g opacity="0.62">
+    <circle cx="182" cy="146" r="72" fill="#c7f2ea" />
+    <circle cx="1010" cy="190" r="110" fill="#fde8b7" />
+    <circle cx="960" cy="620" r="74" fill="#d8f7f1" />
+  </g>
+  <g stroke="#96a7b5" stroke-width="4" stroke-linecap="round" opacity="0.5">
+    <path d="M244 196h110c42 0 64 24 64 64v36" fill="none" />
+    <path d="M956 248h-128c-42 0-64 24-64 64v44" fill="none" />
+    <path d="M276 572h118c38 0 58-20 58-58v-32" fill="none" />
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="232" y="162" width="736" height="434" rx="30" fill="#ffffff" />
+    <rect x="276" y="208" width="648" height="314" rx="20" fill="url(#screen)" />
+    <rect x="276" y="208" width="648" height="54" rx="20" fill="#182a3b" />
+    <circle cx="314" cy="235" r="8" fill="#f87171" />
+    <circle cx="342" cy="235" r="8" fill="#fbbf24" />
+    <circle cx="370" cy="235" r="8" fill="#34d399" />
+    <g fill="none" stroke-linecap="round" stroke-width="9">
+      <path d="M340 318h132" stroke="#5eead4" />
+      <path d="M340 366h248" stroke="#93c5fd" />
+      <path d="M340 414h178" stroke="#fde68a" />
+      <path d="M340 462h304" stroke="#c4b5fd" />
+      <path d="M694 318h116" stroke="#93c5fd" />
+      <path d="M646 366h164" stroke="#5eead4" />
+      <path d="M602 414h208" stroke="#fde68a" />
+      <path d="M704 462h106" stroke="#c4b5fd" />
+    </g>
+    <rect x="454" y="596" width="292" height="36" rx="18" fill="#dce7ef" />
+    <rect x="368" y="632" width="464" height="36" rx="18" fill="#ffffff" />
+  </g>
+  <g fill="#ffffff" stroke="#d9e6ee" stroke-width="3" filter="url(#shadow)">
+    <rect x="116" y="282" width="158" height="118" rx="24" />
+    <rect x="920" y="352" width="164" height="126" rx="24" />
+    <rect x="144" y="496" width="188" height="118" rx="24" />
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M188 328l-28 24 28 24" stroke="#0f766e" stroke-width="11" />
+    <path d="M206 328l28 24-28 24" stroke="#0f766e" stroke-width="11" />
+    <path d="M972 415h58M1001 386v58" stroke="#0f766e" stroke-width="11" />
+    <path d="M200 548h76M200 580h42" stroke="#0f766e" stroke-width="10" />
+  </g>
+  <g fill="#0f766e">
+    <circle cx="244" cy="196" r="14" />
+    <circle cx="956" cy="248" r="14" />
+    <circle cx="276" cy="572" r="14" />
+  </g>
+</svg>
