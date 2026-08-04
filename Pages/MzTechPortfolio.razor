@@ -1,0 +1,29 @@
+@page "/ai-plan-quotation"
+@page "/mztech-portfolio"
+@using MzTech.Components
+
+<ProjectDetails Title="AI-Powered Plan Analysis and Quotation Generation"
+                Subtitle="A personal coding project for reviewing submitted plans and producing quotation drafts with AI-assisted workflows."
+                MainImage="images/ai-plan-quotation.svg"
+                AboutDescription="AI-Powered Plan Analysis and Quotation Generation is an ongoing project focused on extracting key details from uploaded plans, identifying work scope, and turning structured findings into quotation-ready summaries."
+                AdditionalDescription="The project is being used to practice document intake flows, AI-assisted review patterns, structured estimate generation, and clear dashboard experiences for operational teams."
+                TechStack="Built as an ongoing learning project using modern .NET, Blazor UI patterns, and AI-assisted workflow concepts."
+                ContactUrl="/contact"
+                Features="@Features"
+                AdditionalImages="@Images" />
+
+@code {
+    private List<string> Features = new()
+    {
+        "Plan upload and intake workflow experiments",
+        "AI-assisted scope extraction and review summaries",
+        "Quotation draft generation for faster estimating",
+        "Dashboard-style tracking for analysis and approval status"
+    };
+
+    private List<string> Images = new()
+    {
+        "images/ai-plan-review.svg",
+        "images/ai-quote-builder.svg"
+    };
+}

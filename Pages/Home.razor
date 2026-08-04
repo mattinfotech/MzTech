@@ -4,18 +4,10 @@
 <PageTitle>MZ Tech</PageTitle>
 
 <section class="hero home-hero d-flex align-items-center text-center text-md-start text-white">
-    <button type="button"
-            class="hero-background-preview"
-            data-bs-toggle="modal"
-            data-bs-target="#bannerPreviewModal"
-            aria-label="Preview banner image">
-        <img src="https://inductability.blob.core.windows.net/profile/Banner?sp=r&st=2025-08-24T13:40:55Z&se=2026-08-24T21:55:55Z&spr=https&sv=2024-11-04&sr=b&sig=Q7JdbiqvcXSbxUUbBQtbtmyAhAD0c4EDkmxytObM9jk%3D"
-             alt=""
-             aria-hidden="true" />
-        <span class="hero-preview-icon" aria-hidden="true">
-            <i class="fas fa-search-plus"></i>
-        </span>
-    </button>
+    <div class="hero-background-preview" aria-hidden="true">
+        <img src="images/MZTechBanner.png"
+             alt="" />
+    </div>
 
     <div class="container hero-container">
         <div class="row align-items-center hero-banner-row">
@@ -25,7 +17,8 @@
                         Hi, I'm <span class="text-primary">MZ</span>
                     </h1>
                     <p class="lead mb-4 text-light">
-                        A passionate software developer building modern and impactful software solutions.
+                        <span class="hero-intro-line">A passionate software developer building modern</span>
+                        <span class="hero-intro-line">and impactful software solutions.</span>
                     </p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-3 hero-actions">
                         <a href="#projects" class="btn btn-primary btn-lg px-4 rounded-pill">
@@ -40,29 +33,14 @@
         </div>
     </div>
 </section>
-<div class="modal fade image-preview-modal" id="bannerPreviewModal" tabindex="-1" aria-labelledby="bannerPreviewModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content border-0">
-            <div class="modal-header">
-                <h5 class="modal-title" id="bannerPreviewModalLabel">Banner Image</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-0">
-                <img src="https://inductability.blob.core.windows.net/profile/Banner?sp=r&st=2025-08-24T13:40:55Z&se=2026-08-24T21:55:55Z&spr=https&sv=2024-11-04&sr=b&sig=Q7JdbiqvcXSbxUUbBQtbtmyAhAD0c4EDkmxytObM9jk%3D"
-                     alt="Banner Image"
-                     class="img-fluid w-100 preview-modal-image" />
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Projects Section -->
 <section id="projects" class="py-5 projects-section">
     <div class="container">
         <!-- Section Heading -->
         <div class="text-center mb-5">
-            <h2 class="fw-bold display-6">✨ Featured Projects</h2>
-            <p class="text-muted fs-5">A selection of my recent works showcasing design and development skills</p>
+            <h2 class="fw-bold display-6">Featured Projects</h2>
+            <p class="text-muted fs-5">A selection of my recent works with various clients.</p>
         </div>
 
         <!-- Project Cards -->
@@ -149,6 +127,31 @@
                 <button class="btn btn-outline-primary rounded-pill px-4 project-toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#moreProjects" aria-expanded="false" aria-controls="moreProjects">
                     Show More Projects
                 </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ongoing Development Projects -->
+<section id="ongoing-projects" class="py-5 ongoing-projects-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-6">Ongoing Development Projects</h2>
+            <p class="text-muted fs-5">Some personal coding projects to improve my skills and stay up to date with the latest technologies.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <ProjectCard Title="AI-Powered Plan Analysis and Quotation Generation"
+                             Description="A personal coding project for extracting plan details, analyzing project requirements, and generating AI-assisted quotation drafts."
+                             ImageUrl="images/ai-plan-quotation.svg"
+                             DetailsUrl="/ai-plan-quotation" />
+            </div>
+            <div class="col-md-6">
+                <ProjectCard Title="Online Cabinet Configurator"
+                             Description="A personal coding project for configuring cabinet layouts, finishes, dimensions, and quote-ready selections in a responsive web interface."
+                             ImageUrl="images/cabinet-configurator.svg"
+                             DetailsUrl="/online-cabinet-configurator" />
             </div>
         </div>
     </div>

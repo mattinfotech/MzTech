@@ -8,6 +8,7 @@ namespace MzTech.Components
         [Parameter] public string Description { get; set; } = string.Empty;
         [Parameter] public string ImageUrl { get; set; } = string.Empty;
         [Parameter] public string DetailsUrl { get; set; } = string.Empty;
+        [Parameter] public string? GitHubUrl { get; set; }
 
         private string ModalId
         {

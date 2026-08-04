@@ -1,4 +1,4 @@
-﻿@page "/teambridg-tracker"
+@page "/teambridg-tracker"
 @using MzTech.Components
 
 <ProjectDetails 
@@ -34,5 +34,10 @@
         "Secure, role-based access control"
     };
 
-    private List<string> AdditionalImages = new();
+    private List<string> AdditionalImages = new()
+    {
+        "images/teambridg-dashboard.svg",
+        "images/teambridg-board.svg",
+        "images/teambridg-timeline.svg"
+    };
 }

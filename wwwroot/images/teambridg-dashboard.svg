@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Team Bridg Tracker dashboard sample</title><desc id="desc">Sample dashboard screenshot with project metrics, activity, and task lists.</desc>
+<rect width="1200" height="760" fill="#f3f7f8"/><rect x="42" y="42" width="1116" height="676" rx="24" fill="#fff" stroke="#d8e3ea"/>
+<rect x="42" y="42" width="1116" height="76" rx="24" fill="#10202f"/><text x="82" y="91" fill="#fff" font-family="Segoe UI, Arial" font-size="28" font-weight="700">Team Bridg Tracker</text>
+<rect x="82" y="158" width="240" height="132" rx="16" fill="#e8fbf7"/><rect x="354" y="158" width="240" height="132" rx="16" fill="#eef4ff"/><rect x="626" y="158" width="240" height="132" rx="16" fill="#fff4dc"/><rect x="898" y="158" width="220" height="132" rx="16" fill="#f0fdf4"/>
+<g font-family="Segoe UI, Arial" fill="#10202f"><text x="112" y="204" font-size="20">Open Tasks</text><text x="112" y="254" font-size="46" font-weight="700">48</text><text x="384" y="204" font-size="20">In Progress</text><text x="384" y="254" font-size="46" font-weight="700">16</text><text x="656" y="204" font-size="20">Due Soon</text><text x="656" y="254" font-size="46" font-weight="700">7</text><text x="928" y="204" font-size="20">Completed</text><text x="928" y="254" font-size="46" font-weight="700">132</text></g>
+<rect x="82" y="332" width="500" height="316" rx="18" fill="#fff" stroke="#d8e3ea"/><text x="112" y="380" font-family="Segoe UI, Arial" fill="#10202f" font-size="24" font-weight="700">Project Activity</text>
+<polyline points="122,584 188,520 256,548 324,458 392,492 460,416 536,452" fill="none" stroke="#0f766e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626" y="332" width="492" height="316" rx="18" fill="#fff" stroke="#d8e3ea"/><text x="656" y="380" font-family="Segoe UI, Arial" fill="#10202f" font-size="24" font-weight="700">Priority Tasks</text>
+<g fill="#e8fbf7"><rect x="656" y="414" width="418" height="46" rx="12"/><rect x="656" y="482" width="374" height="46" rx="12"/><rect x="656" y="550" width="402" height="46" rx="12"/></g>
+<g font-family="Segoe UI, Arial" fill="#10202f" font-size="18"><text x="680" y="444">Review client milestones</text><text x="680" y="512">Assign QA tickets</text><text x="680" y="580">Prepare sprint notes</text></g>
+</svg>

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components;
 
 namespace MzTech.Pages
 {
@@ -16,8 +16,8 @@ namespace MzTech.Pages
         protected List<NavLinkItem> NavLinks = new()
         {
             new() { Text = "Home", Href = "/", IsActive = true },
-            new() { Text = "Projects", Href = "#projects" },
-            new() { Text = "Contact", Href = "#contact" },
+            new() { Text = "Projects", Href = "/#projects" },
+            new() { Text = "Contact", Href = "/#contact" },
             new() { Text = "About", Href = "/about" }
         };
     }

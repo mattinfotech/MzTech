@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components;
 
 namespace MzTech.Components
 {
@@ -12,6 +12,16 @@ namespace MzTech.Components
         [Parameter] public List<string>? Features { get; set; }
         [Parameter] public string? TechStack { get; set; }
         [Parameter] public string? ContactUrl { get; set; }
+        [Parameter] public string? RepositoryUrl { get; set; }
         [Parameter] public List<string>? AdditionalImages { get; set; }
+
+        private string MainImageModalId => GetImageModalId("main", 0);
+
+        private string GetImageModalId(string group, int index)
+        {
+            var key = $"{Title}-{group}-{index}";
+            var safeKey = new string(key.Where(char.IsLetterOrDigit).ToArray()).ToLowerInvariant();
+            return $"project-detail-preview-{(string.IsNullOrWhiteSpace(safeKey) ? "image" : safeKey)}";
+        }
     }
 }

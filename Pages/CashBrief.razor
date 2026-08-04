@@ -1,0 +1,30 @@
+@page "/online-cabinet-configurator"
+@page "/online-cabiner-configurator"
+@page "/cashbrief"
+@using MzTech.Components
+
+<ProjectDetails Title="Online Cabinet Configurator"
+                Subtitle="A personal coding project for building custom cabinet selections through an interactive configuration flow."
+                MainImage="images/cabinet-configurator.svg"
+                AboutDescription="Online Cabinet Configurator is an ongoing project for exploring a guided product configuration experience where users can choose cabinet layouts, dimensions, materials, finishes, and accessories."
+                AdditionalDescription="The project helps sharpen interactive UI design, option-state management, responsive product previews, and quote-ready summary workflows for ecommerce-style applications."
+                TechStack="Built as an ongoing learning project using modern .NET, Blazor UI patterns, and responsive frontend techniques."
+                ContactUrl="/contact"
+                Features="@Features"
+                AdditionalImages="@Images" />
+
+@code {
+    private List<string> Features = new()
+    {
+        "Interactive cabinet layout and size selection",
+        "Finish, hardware, and accessory configuration",
+        "Responsive visual preview for selected options",
+        "Quote-ready summary flow for configured cabinet packages"
+    };
+
+    private List<string> Images = new()
+    {
+        "images/cabinet-finishes.svg",
+        "images/cabinet-summary.svg"
+    };
+}

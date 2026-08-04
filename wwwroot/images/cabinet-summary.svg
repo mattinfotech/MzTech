@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Cabinet quote summary screen</title>
+  <desc id="desc">Quote summary mockup with configured package, itemized selections, and estimated total.</desc>
+  <rect width="1200" height="750" fill="#f1f7f4"/>
+  <rect x="90" y="72" width="1020" height="606" rx="22" fill="#ffffff" stroke="#d7e6df"/>
+  <rect x="130" y="124" width="416" height="500" rx="18" fill="#17324d"/>
+  <text x="166" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">Configured Package</text>
+  <rect x="166" y="222" width="306" height="210" rx="14" fill="#f2d3aa" stroke="#fff1d6" stroke-width="5"/>
+  <rect x="188" y="246" width="122" height="162" rx="8" fill="#fff1d6" stroke="#9a6a3d" stroke-width="3"/>
+  <rect x="328" y="246" width="122" height="162" rx="8" fill="#fff1d6" stroke="#9a6a3d" stroke-width="3"/>
+  <rect x="166" y="484" width="284" height="14" rx="7" fill="#ffffff" opacity="0.78"/>
+  <rect x="166" y="524" width="226" height="14" rx="7" fill="#ffffff" opacity="0.52"/>
+  <rect x="166" y="564" width="250" height="14" rx="7" fill="#ffffff" opacity="0.36"/>
+  <rect x="596" y="124" width="474" height="500" rx="18" fill="#ffffff" stroke="#d7e6df"/>
+  <text x="634" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#17324d">Quote Summary</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#52616d">
+    <text x="634" y="244">Base cabinet set</text>
+    <text x="634" y="304">Premium finish</text>
+    <text x="634" y="364">Hardware kit</text>
+    <text x="634" y="424">Installation prep</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#17324d">
+    <text x="940" y="244">$3,900</text>
+    <text x="940" y="304">$720</text>
+    <text x="940" y="364">$280</text>
+    <text x="940" y="424">$640</text>
+  </g>
+  <rect x="634" y="474" width="360" height="1" fill="#dbe6e0"/>
+  <text x="634" y="538" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#17324d">Estimated total</text>
+  <text x="880" y="540" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="900" fill="#0f766e">$5,540</text>
+</svg>

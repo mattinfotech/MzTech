@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Team Bridg Tracker timeline sample</title><desc id="desc">Sample project timeline screenshot with milestones and progress bars.</desc>
+<rect width="1200" height="760" fill="#f3f7f8"/><rect x="54" y="54" width="1092" height="652" rx="24" fill="#fff" stroke="#d8e3ea"/>
+<text x="94" y="118" font-family="Segoe UI, Arial" fill="#10202f" font-size="34" font-weight="700">Delivery Timeline</text>
+<line x1="168" y1="190" x2="1030" y2="190" stroke="#d8e3ea" stroke-width="6" stroke-linecap="round"/>
+<g fill="#0f766e"><circle cx="208" cy="190" r="18"/><circle cx="438" cy="190" r="18"/><circle cx="668" cy="190" r="18"/><circle cx="898" cy="190" r="18"/></g>
+<g font-family="Segoe UI, Arial" fill="#617082" font-size="18"><text x="170" y="238">Plan</text><text x="394" y="238">Build</text><text x="620" y="238">Review</text><text x="842" y="238">Launch</text></g>
+<g transform="translate(120 308)"><rect width="960" height="72" rx="14" fill="#e8fbf7"/><rect width="680" height="72" rx="14" fill="#0f766e" opacity="0.86"/><text x="28" y="46" font-family="Segoe UI, Arial" fill="#fff" font-size="22" font-weight="700">Client Portal</text></g>
+<g transform="translate(120 420)"><rect width="960" height="72" rx="14" fill="#eef4ff"/><rect width="540" height="72" rx="14" fill="#2563eb" opacity="0.82"/><text x="28" y="46" font-family="Segoe UI, Arial" fill="#fff" font-size="22" font-weight="700">Reporting Workflow</text></g>
+<g transform="translate(120 532)"><rect width="960" height="72" rx="14" fill="#fff4dc"/><rect width="760" height="72" rx="14" fill="#f59e0b" opacity="0.86"/><text x="28" y="46" font-family="Segoe UI, Arial" fill="#fff" font-size="22" font-weight="700">QA Automation</text></g>
+</svg>

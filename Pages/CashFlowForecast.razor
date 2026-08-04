@@ -1,0 +1,28 @@
+@page "/cash-flow-forecast"
+@using MzTech.Components
+
+<ProjectDetails Title="Cash Flow Forecast Lab"
+                Subtitle="A personal coding project for modeling and visualizing cash flow forecasts."
+                MainImage="images/forecast.png"
+                AboutDescription="Cash Flow Forecast Lab is a personal project for experimenting with cash flow forecasting interfaces, simple financial modeling, and visual reporting patterns."
+                AdditionalDescription="It is used as a learning space for improving data-driven UI design, chart-friendly layouts, and practical business forecasting workflows."
+                TechStack="Built as a personal learning project using modern .NET and web UI patterns."
+                ContactUrl="/contact"
+                Features="@Features"
+                AdditionalImages="@Images" />
+
+@code {
+    private List<string> Features = new()
+    {
+        "Cash flow forecasting workflow experiments",
+        "Dashboard-oriented visual layout",
+        "Financial data presentation practice",
+        "Ongoing refinement with current frontend techniques"
+    };
+
+    private List<string> Images = new()
+    {
+        "images/forecast.png",
+        "images/cashbrief.png"
+    };
+}

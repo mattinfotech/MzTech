@@ -1,16 +1,15 @@
-﻿@page "/lending-fabric"
+@page "/lending-fabric"
 @using MzTech.Components
 
 <ProjectDetails Title="Lending Fabric"
                 Subtitle="A refinance application platform for streamlined loan processing"
                 MainImage="https://inductability.blob.core.windows.net/profile/LF-DealUser.png?sp=r&st=2025-10-12T06:52:03Z&se=2026-10-12T15:07:03Z&spr=https&sv=2024-11-04&sr=b&sig=KvUYi7nODcYb02Az57VPhF29vzZaIYmSzy4DQbVTrqo%3D"
-                AboutDescription="Lending Fabric is refinance application software designed to streamline and automate the loan refinancing process."
-                AdditionalDescription="A multitenant platform that integrates intelligent document processing, borrower risk profiling, and workflow management tools—enabling financial institutions to process refinancing requests with greater speed, accuracy, and compliance."
+                AboutDescription="Lending Fabric is a refinance application software designed to streamline and automate the loan refinancing process."
+                AdditionalDescription="It is a multi-tenant platform that integrates intelligent document processing, borrower risk profiling, and workflow management tools, enabling financial institutions to process refinancing requests with greater speed, accuracy, and compliance."
                 TechStack="Built with <strong>DevExpress XAF Blazor Server</strong> and <strong>ASP.NET Core</strong>, utilizing <strong>Entity Framework Core</strong> and <strong>Azure Services</strong>."
                 ContactUrl="/contact"
                 Features="@Features"
                 AdditionalImages="@Images" />
-
 
 @code {
     private List<string> Features = new()
