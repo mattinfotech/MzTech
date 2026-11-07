@@ -2,23 +2,23 @@
     <div class="container">
         <!-- Logo -->
         <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
-            <img src="https://inductability.blob.core.windows.net/profile/Logo?sp=r&st=2025-08-24T14:00:35Z&se=2026-08-24T22:15:35Z&spr=https&sv=2024-11-04&sr=b&sig=Vn2ApWBjyNQK4FQESN7lG3Bs%2F6pHOgQ984AlvltZiZI%3D"
+            <img src="images/Logo.png"
                  alt="Logo"
                  class="logo-img me-2" />
-            <span class="d-none d-md-inline">@BrandName</span>
+            <span>@BrandName</span>
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" @onclick="ToggleMenu"
+                aria-controls="navbarNav" aria-expanded="@IsMenuOpen.ToString().ToLowerInvariant()" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end @(IsMenuOpen ? "show" : null)" id="navbarNav">
             <ul class="navbar-nav">
                 @foreach (var item in NavLinks)
                 {
                     <li class="nav-item">
-                        <a class="nav-link @(item.IsActive ? "active" : "")" href="@item.Href">@item.Text</a>
+                        <a class="nav-link @(IsActive(item.Href) ? "active" : null)" href="@item.Href" @onclick="CloseMenu" aria-current="@(IsActive(item.Href) ? "page" : null)">@item.Text</a>
                     </li>
                 }
             </ul>

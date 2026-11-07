@@ -6,7 +6,7 @@
             data-bs-toggle="modal"
             data-bs-target="#@ModalId"
             aria-label="Preview @Title image">
-        <img src="@ImageUrl" class="card-img-top" alt="@Title">
+        <img src="@ImageUrl" class="card-img-top" alt="@Title" loading="lazy" decoding="async">
         <span class="project-image-icon" aria-hidden="true">
             <i class="fas fa-search-plus"></i>
         </span>
@@ -16,7 +16,7 @@
         <h5 class="card-title fw-semibold">@Title</h5>
         <p class="card-text text-muted small">@Description</p>
         <div class="project-card-actions mt-auto">
-            <a href="@DetailsUrl" class="btn btn-outline-primary btn-sm rounded-pill">View Details</a>
+            <a href="@DetailsUrl" class="project-details-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             @if (!string.IsNullOrWhiteSpace(GitHubUrl))
             {
                 <a href="@GitHubUrl" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-sm rounded-pill">
